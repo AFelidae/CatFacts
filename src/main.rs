@@ -116,7 +116,7 @@ fn main() {
     loop {
         //FACTS[i]
         i += 1;
-        if i > 100 {
+        if i >= FACTS.len() {
             i = 0
         }
         thread::sleep(Duration::from_millis(200)); //If you dont have it windows throws a hissy fit
